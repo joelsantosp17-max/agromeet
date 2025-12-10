@@ -157,13 +157,44 @@ redirecionar("siteAgriShow");
 
 // Teste -> mostra evento especifico com base em alguma condição
 
-let evento1 = document.getElementById("agroBrasilia");
+*/*let evento1 = document.getElementById("agroBrasilia");
 let infoEvento1 = document.getElementById("detalhes");
 
 evento1.addEventListener("click", () => {
   console.log("AgroBrasília");
   infoEvento1.style.display = "block";
+});*/
+
+
+// Teste -> mostra evento especifico com base em alguma condição
+let evento1 = document.getElementById("agroBrasilia");
+let evento2 = document.getElementById("detalhesNorteShow");
+let evento3 = document.getElementById("detalhesSealba");
+let evento4 = document.getElementById("detalhesItaipu");
+let evento5 = document.getElementById("detalhesAgriShow");
+let infoEvento1 = document.getElementById("detalhes");
+let imagem1 = document.getElementById("imgDetNorteShow")
+let imagem2 = document.getElementById("imgDetSealba")
+let imagem3 = document.getElementById("imgDetItaipu")
+let imagem4 = document.getElementById("imgDetAgriShow")
+
+evento1.addEventListener("click", () => {
+
+  console.log("AgroBrasília");
+  infoEvento1.style.display = "block";
+   evento2.style.display = "none";
+    evento3.style.display = "none";
+    evento4.style.display = "none";
+    evento5.style.display = "none";
+
+    imagem1.style.display = "none";
+    imagem2.style.display = "none";
+    imagem3.style.display = "none";
+    imagem4.style.display = "none";
+
+ 
 });
+
 
 let selecao = document.getElementById("regioes");
 
@@ -174,5 +205,8 @@ selecao.addEventListener("change", () => {
     ? (infoEvento1.style.display = "block")
     : (infoEvento1.style.display = "none");
 });
+
+
+
 
 
